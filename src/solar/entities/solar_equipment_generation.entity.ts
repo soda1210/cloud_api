@@ -5,7 +5,7 @@ import {
   CreateDateColumn,
 } from 'typeorm';
 
-@Entity('solar_equipment_generation')
+@Entity('solar_equipment_generation_his')
 export class SolarEquipmentGenerationHis {
   @PrimaryGeneratedColumn({ name: 'History_ID' })
   historyId: number;
