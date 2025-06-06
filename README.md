@@ -98,6 +98,13 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
 
 
+##  版本控制
+儲能
+  v2.0  完成初步架構，swagger 可以順利開啟
+  v2.1  完成Request body欄位，可在Request body中輸入資料，並檢視對應資料表資料是否更新
+
+
+
 # Solar Equipment Generation API
 
 這是一個基於 NestJS 開發的太陽能設備發電資料管理 API 系統，提供 RESTful API 介面來接收和管理多個案場的太陽能設備發電資料。

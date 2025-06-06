@@ -7,6 +7,6 @@ import { BessService } from 'src/bess/bess.service';
 @Injectable()
 export class SiteEmsService extends BessService<SiteEms> {
   constructor(@InjectRepository(SiteEms) repo: Repository<SiteEms>) {
-    super(repo);
+    super(repo, 'EMS_ID');
   }
 }

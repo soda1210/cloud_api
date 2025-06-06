@@ -17,7 +17,7 @@ export class BessService<T extends ObjectLiteral> {
     // 過濾掉 undefined 或 null 欄位
     Object.keys(updateDto).forEach((key) => {
       const value = updateDto[key as keyof T];
-      if (value !== undefined && value !== null) {
+      if (value !== undefined ) {// 只排除 undefined，允許 null
         (entity as any)[key] = value;
       }
     });
