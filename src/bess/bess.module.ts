@@ -1,8 +1,9 @@
 // src/bess/bess.module.ts
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { BessService } from './bess.service';
-import { BessController } from './bess.controller';
+// import { BessService } from './bess.service';
+// import { BessController } from './bess.controller';
+
 
 import { SiteEms } from './site-ems/site-ems.entity';
 import { SiteEmsService } from './site-ems/site-ems.service';
@@ -21,10 +22,18 @@ import { EssMeterService } from './ess-meter/ess-meter.service';
 import { EssMeterController } from './ess-meter/ess-meter.controller';
 
 
+// @Module({
+//   imports: [TypeOrmModule.forFeature([ SiteEms, EssBess, EssPcs, EssMeter])],
+//   providers: [ BessService, SiteEmsService, EssBessService, EssPcsService, EssMeterService],
+//   controllers: [BessController, SiteEmsController, EssBessController, EssPcsController, EssMeterController],
+// })
+// export class BessModule {}
+
+
 // 之後加上 EssPcs 與 EssMeter
 @Module({
   imports: [TypeOrmModule.forFeature([ SiteEms, EssBess, EssPcs, EssMeter])],
-  providers: [BessService, SiteEmsService, EssBessService, EssPcsService, EssMeterService],
-  controllers: [BessController, SiteEmsController, EssBessController, EssPcsController, EssMeterController],
+  providers: [  SiteEmsService, EssBessService, EssPcsService, EssMeterService],
+  controllers: [SiteEmsController, EssBessController, EssPcsController, EssMeterController],
 })
 export class BessModule {}

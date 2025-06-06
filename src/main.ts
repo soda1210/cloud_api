@@ -33,6 +33,8 @@ async function bootstrap() {
     .setTitle('Solar Equipment Generation API')
     .setDescription('API for solar equipment generation data management')
     .setVersion('1.0')
+    .addTag('Solar')
+    .addTag('BESS')
     .addApiKey(
       {
         type: 'apiKey',

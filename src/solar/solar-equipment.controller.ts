@@ -24,7 +24,8 @@ import { BatchCreateSolarEquipmentGenerationDto } from './dto/batch-create-solar
 import { QuerySolarEquipmentGenerationDto } from './dto/query-solar-equipment-generation.dto';
 import { ApiKeyGuard } from '../auth/api-key.guard';
 
-@ApiTags('Solar Equipment Generation')
+
+@ApiTags('Solar')
 @ApiSecurity('API-Key')
 @UseGuards(ApiKeyGuard)
 @Controller('solar-equipment')
