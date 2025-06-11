@@ -1,14 +1,16 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { SolarEquipmentModule } from './solar/solar-equipment.module';
+import { SolarModule } from './solar/solar.module';
 import { BessModule } from './bess/bess.module';
 import { AuthModule } from './auth/auth.module';
+import { SolarSiteGeneration } from './solar/solar-site-generation/solar-site-generation.entity';
+import { SolarEquipmentGeneration } from './solar/solar-equipment-generation/solar-equipment-generation.entity';
+import { SolarMeter } from './solar/solar-meter/solar-meter.entity';
 import { SiteEms } from './bess/site-ems/site-ems.entity';
 import { EssBess } from './bess/ess-bess/ess-bess.entity';
 import { EssPcs } from './bess/ess-pcs/ess-pcs.entity';
 import { EssMeter } from './bess/ess-meter/ess-meter.entity';
-import { SolarEquipmentGenerationHis } from './solar/entities/solar_equipment_generation.entity'; 
 
 @Module({
   imports: [
@@ -29,7 +31,9 @@ import { SolarEquipmentGenerationHis } from './solar/entities/solar_equipment_ge
         password: configService.get('DB_PASSWORD'),
         database: configService.get('DB_DATABASE'),
         entities: [
-          SolarEquipmentGenerationHis,
+          SolarSiteGeneration,
+          SolarEquipmentGeneration,
+          SolarMeter,
           SiteEms,
           EssBess,
           EssPcs,
@@ -47,7 +51,7 @@ import { SolarEquipmentGenerationHis } from './solar/entities/solar_equipment_ge
 
     // 功能模組
     AuthModule,
-    SolarEquipmentModule,
+    SolarModule,
     BessModule
   ],
 })

@@ -1,13 +1,13 @@
 import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm';
 import { ApiProperty } from '@nestjs/swagger';
 
-@Entity('ESS_meter')
-export class EssMeter {
+@Entity('Solar_meter')
+export class SolarMeter {
   @PrimaryGeneratedColumn({ name: 'Meter_ID' })
   Meter_ID: number;
 
   @Column()
-  ESS_site_ID: number;
+  Solar_site_ID: number;
 
   @Column()
   Location_ID: number;
