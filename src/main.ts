@@ -30,8 +30,8 @@ async function bootstrap() {
 
   // Swagger API 文件設定
   const config = new DocumentBuilder()
-    .setTitle('Solar Equipment Generation API')
-    .setDescription('API for solar equipment generation data management')
+    .setTitle('東元雲平台API')
+    .setDescription('案場資料上雲操作手冊')
     .setVersion('1.0')
     .addTag('Solar')
     .addTag('BESS')

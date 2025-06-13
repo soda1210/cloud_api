@@ -103,8 +103,8 @@ Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
   v2.0  完成儲能初步架構，swagger 可以順利開啟
   v2.1  完成儲能Request body欄位，可在Request body中輸入資料，並檢視對應資料表資料是否更新
   v2.2  調整儲能Request body欄位，已有預設資料，測試時需要調整內文資料數值
-  v2.2  完成太陽能Request body欄位，所有[ReceivedTime] 統一更改為[Received_Time]
-
+  v2.3  完成太陽能Request body欄位，所有[ReceivedTime] 統一更改為[Received_Time]
+  v2.4  卡片後面補上簡短說明與格式撰寫
 
 
 # Solar Equipment Generation API
