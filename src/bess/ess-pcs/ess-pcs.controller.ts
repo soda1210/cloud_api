@@ -5,7 +5,7 @@ import { EssPcsService } from './ess-pcs.service';
 import { EssPcs } from './ess-pcs.entity';
 import { UpdateEssPcsDto } from './update-ess-pcs.dto';
 
-@Controller('api/v1/bess/ess-pcs')
+@Controller('Bess/EssPCS')
 export class EssPcsController extends BessController<EssPcs> {
   constructor(service: EssPcsService) {
     super(service);

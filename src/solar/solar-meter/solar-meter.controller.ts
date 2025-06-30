@@ -5,7 +5,7 @@ import { SolarMeterService } from './solar-meter.service';
 import { SolarMeter } from './solar-meter.entity';
 import { UpdateSolarMeterDto } from './update-solar-meter.dto';
 
-@Controller('api/v1/solar/solar-meter')
+@Controller('Solar/SolarMeter')
 export class SolarMeterController extends SolarController<SolarMeter> {
   constructor(service: SolarMeterService) {
     super(service);

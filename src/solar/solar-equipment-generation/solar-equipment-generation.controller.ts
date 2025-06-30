@@ -5,7 +5,7 @@ import { SolarEquipmentGenerationService } from './solar-equipment-generation.se
 import { SolarEquipmentGeneration } from './solar-equipment-generation.entity';
 import { UpdateSolarEquipmentGenerationDto } from './update-solar-equipment-generation.dto';
 
-@Controller('api/v1/solar/solar-equipment-generation')
+@Controller('Solar/SolarEquipmentGeneration')
 export class SolarEquipmentGenerationController extends SolarController<SolarEquipmentGeneration> {
   constructor(service: SolarEquipmentGenerationService) {
     super(service);

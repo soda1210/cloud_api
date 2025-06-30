@@ -5,7 +5,7 @@ import { SiteEmsService } from './site-ems.service';
 import { SiteEms } from './site-ems.entity';
 import { UpdateSiteEmsDto } from './update-site-ems.dto';
 
-@Controller('api/v1/bess/site-ems')
+@Controller('Bess/SiteEMS')
 export class SiteEmsController extends BessController<SiteEms> {
   constructor(service: SiteEmsService) {
     super(service);

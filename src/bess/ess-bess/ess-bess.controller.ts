@@ -5,7 +5,7 @@ import { EssBessService } from './ess-bess.service';
 import { EssBess } from './ess-bess.entity';
 import { UpdateEssBessDto } from './update-ess-bess.dto';
 
-@Controller('api/v1/bess/ess-bess')
+@Controller('Bess/EssBess')
 export class EssBessController extends BessController<EssBess> {
   constructor(service: EssBessService) {
     super(service);

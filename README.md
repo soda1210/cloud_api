@@ -105,6 +105,7 @@ Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
   v2.2  調整儲能Request body欄位，已有預設資料，測試時需要調整內文資料數值
   v2.3  完成太陽能Request body欄位，所有[ReceivedTime] 統一更改為[Received_Time]
   v2.4  卡片後面補上簡短說明與格式撰寫
+  v2.5  各項命名方式及網址更改
 
 
 # Solar Equipment Generation API
