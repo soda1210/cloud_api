@@ -371,6 +371,25 @@ npm run test:cov
 
 ## 部署
 
+### windows 環境 npm 套件
+
+📦 安裝套件（全域）
+``` powershell
+npm install -g pm2
+npm install -g pm2-windows-startup
+```
+⚙️ 註冊開機啟動（需要權限）
+``` powershell
+pm2-startup install
+```
+
+### windows IIS 反向代理設定
+![image](./image/step1.png)
+![image](./image/step2.png)
+![image](./image/step3.png)
+
+
+
 ### Docker 部署（可選）
 
 可以建立 Dockerfile 來容器化應用程式：
